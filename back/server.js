@@ -19,7 +19,7 @@ app.get('/transactions', async (req, res) => {
 		const items = await Transaction.findAll();
 
 		res.json({
-			item,
+			items,
 		});
 	} catch (error) {
 		console.error('Ошибка при выполнений запроса ' + error);
