@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 	});
 });
 
-//Получаем данные при обнавлений
+//Получаем данные при обнавлений`
 app.get('/transactions', async (req, res) => {
 	try {
 		const items = await Transaction.findAll();
